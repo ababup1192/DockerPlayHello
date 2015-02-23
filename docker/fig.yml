@@ -1,0 +1,7 @@
+hello:
+  build: .
+  ports:
+    - "50080:9000"
+  volumes:
+    - ./service:/etc/supervisor/conf.d
+    - ./files/opt:/opt
